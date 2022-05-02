@@ -1,0 +1,34 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile"
+		/* "args": { "VARIANT": "16" } */
+	},
+	"settings": { 
+		"terminal.integrated.profiles.windows": {
+			"PowerShell -NoProfile": {
+			  "source": "PowerShell",
+			  "args": ["-NoProfile"]
+			}
+		  },
+		  "terminal.integrated.profiles.linux": {
+			"zsh (login)": {
+			  "path": "zsh",
+			  "args": ["-l"]
+			}
+		  }
+	},
+	"extensions": [
+		"SAPSE.vscode-cds",
+		"sapse.sap-ux-fiori-tools-extension-pack",
+		"alexcvzz.vscode-sqlite",
+		"humao.rest-client",
+		"mechatroner.rainbow-csv",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"GrapeCity.gc-excelviewer"
+	],
+	"forwardPorts": [4004],
+	// Container user VS Code should use when connecting
+	"remoteUser": "root"
+}
