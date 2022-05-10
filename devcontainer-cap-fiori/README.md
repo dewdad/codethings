@@ -11,7 +11,7 @@ But lets describe why it is interesting and what we really need it for.
 In the folder where you would like to 
 
 ```shell
-git clone https://github.com/dewdad/codethings.git tmp_fromgh && npx @atao60/fse-cli copy --quiet "tmp_fromgh/devcontainer-cap-fiori" $(pwd) && npx @atao60/fse-cli remove --quiet tmp_fromgh
+git clone https://github.com/dewdad/codethings.git tmp_fromgh && npx @atao60/fse-cli copy --quiet "tmp_fromgh/devcontainer-cap-fiori/.devcontainer" $(pwd)/.devcontainer && npx @atao60/fse-cli remove --quiet tmp_fromgh
 ```
 
 ## What is a docker dev container for VS Code?
