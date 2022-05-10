@@ -8,10 +8,9 @@ But lets describe why it is interesting and what we really need it for.
 
 ## Usage
 
-1. In your workspace root run the following commmand to copy the **.devcontainer** directory from here to your project (you need NodeJS/NPM on your path)
-```shell git clone https://github.com/dewdad/codethings.git tmp_fromgh && npx @atao60/fse-cli copy --quiet "tmp_fromgh/devcontainer-cap-fiori/.devcontainer" $(pwd)/.devcontainer && npx @atao60/fse-cli remove --quiet tmp_fromgh```
+1. In your workspace root run the following commmand to copy the **.devcontainer** directory from here to your project (you need GIT and NodeJS/NPM binaries on your path)
+   ```shell git clone https://github.com/dewdad/codethings.git tmp_fromgh && npx @atao60/fse-cli copy --quiet "tmp_fromgh/devcontainer-cap-fiori/.devcontainer" $(pwd)/.devcontainer && npx @atao60/fse-cli remove --quiet tmp_fromgh```
 2. [Install the Remote - Containers extension](https://file+.vscode-resource.vscode-cdn.net/Users/i071496/Code/codethings/devcontainer-cap-fiori/vscode:extension/ms-vscode-remote.remote-containers)
-
 
 ## What is a docker dev container for VS Code?
 
@@ -114,7 +113,7 @@ You want to access the container from outside VS Code in your Terminal window? T
 
 - Open a Terminal window
 - Enter `docker ps` to get a list of your running containers (here is an example of my containers)
-  
+
   ```bash
   CONTAINER ID        IMAGE                                                         COMMAND                  CREATED             STATUS              PORTS               NAMES
   ba3f51d77b0c        vsc-sap-comm-content-42fbe9adaaec2f04dce05fdf6aa373d0         "/bin/sh -c 'echo Co…"   2 days ago          Up 2 days                               fervent_engelbart
@@ -142,4 +141,3 @@ On my new Linux (Ubuntu 18.04) host I could not run the dev container. During cr
 ```
 
 __and don't forget to remove the trailing `\` in the line before__
-
