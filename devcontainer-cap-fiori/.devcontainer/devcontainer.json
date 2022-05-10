@@ -29,7 +29,8 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"GrapeCity.gc-excelviewer",
-		"Gruntfuggly.todo-tree"
+		"Gruntfuggly.todo-tree",
+		"TobiasTao.vscode-md"
 	],
 	"forwardPorts": [4004],
 	// Use 'postCreateCommand' to run commands after the container is created.
