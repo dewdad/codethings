@@ -1,5 +1,7 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.101.0/containers/typescript-node-12
 {
-	"name": "Node.js",
+	"name": "Node JS & TS & SAP CAP & UI5",
 	"build": {
 		"dockerfile": "Dockerfile"
 		/* "args": { "VARIANT": "16" } */
@@ -26,9 +28,13 @@
 		"mechatroner.rainbow-csv",
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		"GrapeCity.gc-excelviewer"
+		"GrapeCity.gc-excelviewer",
+		"Gruntfuggly.todo-tree"
 	],
 	"forwardPorts": [4004],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
 	// Container user VS Code should use when connecting
-	"remoteUser": "root"
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "node"
 }

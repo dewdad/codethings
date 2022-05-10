@@ -7,7 +7,7 @@ echo "deb https://packages.cloudfoundry.org/debian stable main" | tee /etc/apt/s
 RUN apt-get update \
 && apt-get -y install --no-install-recommends cf7-cli sqlite3 libsqlite3-dev
 
-RUN su node -c "npm install -g @ui5/cli @sap/cds-dk yo"
+RUN su node -c "npm install -g @ui5/cli @sap/cds-dk typescript yo"
 
 ## Install BTP Cli
 RUN bash -c "echo -ne '\n' | bash <(curl -L https://raw.githubusercontent.com/SAP-samples/sap-tech-bytes/2021-09-01-btp-cli/getbtpcli)"
