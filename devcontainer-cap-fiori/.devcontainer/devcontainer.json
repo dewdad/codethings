@@ -30,7 +30,12 @@
 		"esbenp.prettier-vscode",
 		"GrapeCity.gc-excelviewer",
 		"Gruntfuggly.todo-tree",
-		"TobiasTao.vscode-md"
+		"TobiasTao.vscode-md",
+		"aaron-bond.better-comments",
+		"vinirossa.vscode-gitandgithub-pack",
+		"waderyan.nodejs-extension-pack",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"loiane.ts-extension-pack"
 	],
 	"forwardPorts": [4004],
 	// Use 'postCreateCommand' to run commands after the container is created.
